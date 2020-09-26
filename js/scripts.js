@@ -39,14 +39,10 @@
 
 	});
 
-    // document.addEventListener('DOMContentLoaded', function() {
-    //      var elemsTap = document.querySelector('.tap-target');
-    //      var instancesTap = M.TapTarget.init(elemsTap, {});
-    //     instancesTap.open();
-    //       setTimeout(function() { instancesTap.close(); }, 4000);
-    //     $("div").removeClass("tap-target-origin")
-
-    //   });
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.tap-target');
+        var instances = M.TapTarget.init(elems, options);
+      });
 
 
 
