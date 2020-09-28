@@ -1,8 +1,4 @@
-/* Template: Leno - Mobile App HTML Landing Page Template
-   Author: Inovatik
-   Created: Mar 2019
-   Description: Custom JS file
-*/
+
 
 
 
@@ -20,7 +16,13 @@
 
   
 
-
+    function hover(element) {
+        element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
+      }
+      
+      function unhover(element) {
+        element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
+      }
     
    
 	/* Preloader */
@@ -39,10 +41,6 @@
 
 	});
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.tap-target');
-        var instances = M.TapTarget.init(elems, options);
-      });
 
 
 
