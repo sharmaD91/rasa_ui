@@ -109,10 +109,10 @@
                             <h4>Reiseberatung<br>durch <span id="js-rotating">Chatbot, KI, AI</span></h2>
                             <p class="p-large" >Bitte lass dich von meinem Reisebot beraten - Dadurch hilfst du mir die KI zu trainieren sowie bei meiner Masterarbeit  :) <br>
                           Gerade zu Beginn kann es noch zu vielen <b>Fehlinterpretationen</b> seitens meines Bots kommen - Ich bitte dies zu entschuldigen. Bitte beachte das alle Gespräche aufgezeichnet werden.
-                    
+                                
                             </p>
                             <p class="p-large"> <h4> <b>Den Chatbot findest du unten rechts  :) </b> </h4> </p>
-                           <!-- <button type="button" class="btn btn-outline-primary btn-lg" href="#your_link" id = "start_form"  ><i class="fas fa-list"></i>&nbsp; Fragebogen</a>-->
+                         <button type="button" class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#modalPoll-1" ><i class="fas fa-list"></i>&nbsp; Fragebogen</a>
 
                            <!-- <button type="button" class="btn btn-outline-primary btn-lg"  href="#your-link"  id = "start_bot
                             "  role="button"  ><i class="fas fa-robot"> </i>&nbsp; Chatbot</a> -->
@@ -132,6 +132,159 @@
     <!-- end of header -->
 
 
+    <div class="modal fade right" id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead"> Reiseversicherung  
+        </p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+
+
+
+            
+
+        <form>
+            <div class="form-group row">
+              <label class="col-4 tooltip" title="This is a div">Wie viele Reisen wollen Sie versichern ? </label> 
+              <span class="tooltiptext">Tooltip text</span>
+
+              <div class="col-8">
+
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="countTravel" id="countTravel_0" type="radio" class="custom-control-input" value="multipleTravel"> 
+                  <label for="countTravel_0" class="custom-control-label">Mehrere Reisen im Jahr</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="countTravel" id="countTravel_1" type="radio" class="custom-control-input" value="oneTravel"> 
+                  <label for="countTravel_1" class="custom-control-label">Nur eine Reise</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-4">In welche Region verreisen Sie ?</label> 
+              <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="region " id="region _0" type="radio" class="custom-control-input" value="germany"> 
+                  <label for="region _0" class="custom-control-label">Deutschland</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="region " id="region _1" type="radio" class="custom-control-input" value="europe"> 
+                  <label for="region _1" class="custom-control-label">Europa/Mittelmeer</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="region " id="region _2" type="radio" class="custom-control-input" value="world"> 
+                  <label for="region _2" class="custom-control-label">Welt</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-4">Wie lange verreisen Sie ?</label> 
+                
+              <div class="col-8">
+                <div class="input-group">
+                  <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="Anzahl" type="text" required="">
+                  <div class="input-group-btn">
+                      <span class="caret"></span>
+                    </button>
+                    <select id="selectbasic" name="selectbasic" class="form-control">
+                        <option value="days">Tage</option>
+                        <option value="weeks">Wochen</option>
+                        <option value="weeks">Monate</option>
+
+                      </select>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+
+
+            <div class="form-group row">
+              <label class="col-4">An welchen Leistungen sind sie interessiert ?</label> 
+              <div class="col-8">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input name="insureOptions" id="insureOptions_0" type="checkbox" class="custom-control-input" value="ruecktrittAbbruch"> 
+                  <label for="insureOptions_0" class="custom-control-label">Reiserücktritt und Reiseabbruch</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input name="insureOptions" id="insureOptions_1" type="checkbox" class="custom-control-input" value="reisekranken"> 
+                  <label for="insureOptions_1" class="custom-control-label">Reisekrankenversicherung</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input name="insureOptions" id="insureOptions_2" type="checkbox" class="custom-control-input" value="gepaeck"> 
+                  <label for="insureOptions_2" class="custom-control-label">Reisegepäckversicherung</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+
+              
+              <label for="select1" class="col-4 col-form-label">Möchten Sie ihren Ehepartner oder Kinder bis zu 25 Jahren mitversichern ? </label> 
+            <div class="col-8">
+                <select id="adult64" name="select1" class="custom-select">
+                  <option value="1">Ja</option>
+                  <option value="2">Nein</option>
+
+                </select>
+       
+
+
+
+            </div>
+            </div>
+           
+            
+            <div class="form-group row">
+              <label for="travelDays" class="col-4 col-form-label">Ihr Geburtsdatum</label> 
+              <div class="col-8">
+
+
+                  <input type="date" class="form-control" id ="travelDays">
+                <label for="travelDays"> Geburtsdatum</label>
+             
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+      
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" class="btn btn-primary waves-effect waves-light">Abschicken
+          <i class="fa fa-paper-plane ml-1"></i>
+        </a>
+        <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Abbrechen</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal: modalPoll -->
+
+
 
     <div id="details" class="basic-2">
         <div class="container">
@@ -143,7 +296,7 @@
                     <div class="text-container">
                         <h4>Architektur</h4>
                         <p>Überblick über den Architekturaufbau des Chatbots. Der Chatbot basiert auf dem RASA.AI-Framework.</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">MEHR</a>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">Bild</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -185,7 +338,7 @@
     selector: "#webchat",
     initPayload: "/greet",
     customData: {"language": "de"}, // arbitrary custom data. Stay minimal as this will be added to the socket
-    socketUrl: "https://dave-chatbot.de",
+    socketUrl: "http://localhost:5005",
     socketPath: "/socket.io/",
     title: "Dave",
     showFullScreenButton: true,
