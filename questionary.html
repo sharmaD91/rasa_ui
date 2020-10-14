@@ -39,7 +39,7 @@
 			
 			<form id="insuranceCheck">
 				<div class="form-group row">
-				  <label class="col-4 " title="This is a div">Wie viele Reisen wollen Sie versichern ? </label> 
+				  <label class="col-4 " data-toggle="tooltip" data-placement="top" title="Für den Fall, dass du dieses Jahr öfter verreisen möchte, bieten wir Ihnen spezielle Jahrestarife an">Wie viele Reisen wollen Sie versichern ? </label> 
 	
 				  <div class="col-8">
 	
@@ -55,7 +55,7 @@
 				</div>
 	
 				<div class="form-group row">
-				  <label class="col-4">In welche Region verreisen Sie ?</label> 
+				  <label class="col-4  " data-toggle="tooltip" data-placement="top" title="Dein Reiseziel hat Auswirkungen auf meine Tarifempfehlungen">In welche Region verreisen Sie ?</label> 
 				  <div class="col-8">
 					<div class="custom-control custom-radio custom-control-inline">
 					  <input name="region" id="region _0" type="radio" class="custom-control-input" value="germany"> 
@@ -73,7 +73,7 @@
 				</div>
 	
 				<div class="form-group row">
-				  <label class="col-4">Wie lange verreisen Sie ?</label> 
+				  <label class="col-4" data-toggle="tooltip" data-placement="top" title="Deine Reisedauer hat Auswirkungen auf die Tarifauswahl">Wie lange verreisen Sie ?</label> 
 					
 				  <div class="col-8">
 					<div class="input-group">
@@ -101,11 +101,12 @@
 				  <div class="col-8">
 					<div class="custom-control custom-checkbox custom-control-inline">
 					  <input name="insureOptions" id="ruecktritt" type="checkbox" class="custom-control-input" value="ruecktritt"> 
-					  <label for="ruecktritt" class="custom-control-label">Reiserücktrittversicherung</label>
+					  <label for="ruecktritt" class="custom-control-label" data-toggle="tooltip" data-placement="top" title="Falls Sie plötzlich krank werden oder aus anderen versicherten Gründen nicht verreisen können, gibt es die Möglichkeit eine Reiserücktrittsversicherung abzuschließen">Reiserücktrittversicherung</label>
 					</div>
 					<div class="custom-control custom-checkbox custom-control-inline">
 					  <input name="insureOptions" id="luggage" type="checkbox" class="custom-control-input" value="luggage"> 
-					  <label for="luggage" class="custom-control-label">Reisegepäckversicherung</label>
+					  <label for="luggage" class="custom-control-label "  data-toggle="tooltip" data-placement="top" title="Für den Fall dass Ihr Gepäck auf Ihrer Reise aufgrund der versicherten
+					  Gründe beschädigt wird, gibt es die Möglichkeit eine Reisegepäckversicherung abzuschließen">Reisegepäckversicherung</label>
 					</div>
 			 
 				  </div>
@@ -113,7 +114,8 @@
 				<div class="form-group row">
 	
 				  
-				  <label for="select1" class="col-4 col-form-label">Möchten Sie ihren Ehepartner oder Kinder bis zu 25 Jahren mitversichern ? </label> 
+				  <label for="select1" class="col-4 col-form-label" data-toggle="tooltip" data-placement="top" title="Falls Sie mit deinem Lebenspartner/in und Kindern unter 25 verreisen ,
+				  gibt es die Möglichkeit diese in die Versicherung miteinzuschließen">Möchten Sie ihren Ehepartner oder Kinder bis zu 25 Jahren mitversichern ?  </label> 
 				<div class="col-8">
 					<select id="group" name="select1" class="custom-select">
 					  <option value="True">Ja</option>
@@ -129,7 +131,7 @@
 			   
 				
 				<div class="form-group row">
-				  <label for="birthday" class="col-4 col-form-label">Ihr Geburtsdatum</label> 
+				  <label for="birthday" class="col-4 col-form-label" data-toggle="tooltip" data-placement="top" title="Es gibt spezielle Tarife für Studenten und Personen unter 35">Ihr Geburtsdatum</label> 
 				  <div class="col-8">
 	
 	

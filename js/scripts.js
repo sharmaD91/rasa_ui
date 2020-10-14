@@ -184,7 +184,9 @@ $.ajax({
 
         });
           
-    
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+          })
 
 	/* Navbar Scripts */
 	// jQuery to collapse the navbar on scroll
