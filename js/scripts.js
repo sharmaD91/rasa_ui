@@ -34,15 +34,148 @@
 				preloader.fadeOut(preloaderFadeOutTime);
 			}, 500);
         }
-        
+
         hidePreloader();
         var elems = document.querySelectorAll('.tap-target');
         var instances = M.TapTarget.init(elems, {});
 
-	});
+    });
+    
+    $( "#test" ).click(function() {
+        eModal.iframe('questionary.html', 'Hot news')
+        eModal.setEModalOptions({
+            animation: false
+        });
+
+    }); 
+
+        $( "#sendForm" ).click(function() {
+            
+            var vimg;
+            var html = '<div class="col-md-12">';
+            html += '<div class="border-primary mb-3">';
+            html += '<div class="row">';
+            html += '<div class="col-md-4 userimg"> </div>';
+            html += '<div class="col-md-8 px-3">';
+            html += '<div class="card-block px-3">';
+            html += '<h4 class="card-title"> </h4>';
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+
+            if($("input[type='radio'].custom-control-input").is(':checked')) {
+                var countTravel = $("input[type='radio'][name=countTravel]:checked").val();
+
+            }
+
+            if (countTravel === 'multipleTravel'){
+                    countTravel = true;
+            }
+            else{
+                    countTravel = false;
+            }
+            if($("input[type='radio'].custom-control-input").is(':checked')) {
+                var region = $("input[type='radio'][name=region ]:checked").val();
+            }
+            var travelDays = $("#inputDays").val();
+            var daysFormat = $('#daysformat option:selected').val();
+
+            if (daysFormat === 'days'){
+               travelDays*1;
+            }
+
+            else if (daysFormat === 'weeks'){
+                travelDays = travelDays*7;
+            }
+            else if (daysFormat === 'months'){
+                travelDays = travelDays*30;
+            }
+
+
+            var luggage = $('#luggage:checked').val();
+            if (luggage !== undefined){
+                luggage = 'mittel'
+            }
+            else{
+                luggage =''
+            }
+
+            
+
+            var financeLoss = $('#ruecktritt:checked').val();
+            if (financeLoss !== undefined){
+                financeLoss = 'mittel'
+            }
+            else{
+                financeLoss = ''
+            }
+            var family = $('#group option:selected').val();
+            if (family === 'True'){
+                family = true;
+            }
+            else{
+                family = false;
+            }
+            var myDate = $("#birthday").val();
+        
+           actualYear = new Date().getFullYear()
+           myDate = actualYear - myDate;
+
+            alert(countTravel + " " + region + "  " + travelDays + "  " + daysFormat + "  " + luggage + "  " + financeLoss + "  " + family +"   " + myDate);
+
+   
+$.ajax({
+    method: "POST",
+    url: "https://nodeserver-292320.nw.r.appspot.com/users",
+    // The key needs to match your method's input parameter (case-sensitive).
+    'data':JSON.stringify({"age":myDate,
+    "luggage":luggage,
+    "financeLoss":financeLoss,
+    "group":family,
+    "travelDays":travelDays,
+    "moreTravel":countTravel
+    }),
+         dataType: "json",
+    processData: false,
+    contentType: 'application/json',
+    success: function(data){
+        for (var i = 0; i < data.length; i++) {
+            $('#printcard').append(html);
+          
+            uimg = data[i].image_link;
+            text = data[i].name;
+
+            
+            var $img = $("<img/>");
+            $img.width('200px');
+            $img.height('220px');
+            $img.attr("src", "" + uimg);
+            $(".userimg:eq("+i+")").append($img);
+            $(".card-title:eq("+i+")").append(text);
+
+          }  
+
+        console.log(data[0].image_link);
+        console.log(data)
+       
+    },
+  
+});
 
 
 
+          });
+
+          $( "#closeForm" ).click(function() {
+            
+            $('#printcard').empty();
+
+
+        });
+          
+    
 
 	/* Navbar Scripts */
 	// jQuery to collapse the navbar on scroll
@@ -320,6 +453,7 @@
     }
 
 
+
     /* Privacy Form */
     $("#privacyForm").validator().on("submit", function(event) {
     	if (event.isDefaultPrevented()) {
@@ -396,6 +530,8 @@
     });
     
 
-    
 
 })(jQuery);
+
+
+

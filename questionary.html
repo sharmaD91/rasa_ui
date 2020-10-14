@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+======-->
+<link rel="stylesheet" href="css/yearpicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+			</div>
+
+			
+			<form id="insuranceCheck">
+				<div class="form-group row">
+				  <label class="col-4 " title="This is a div">Wie viele Reisen wollen Sie versichern ? </label> 
+	
+				  <div class="col-8">
+	
+					<div class="custom-control custom-radio custom-control-inline">
+					  <input name="countTravel" id="countTravel_0" type="radio" class="custom-control-input" value="multipleTravel"> 
+					  <label for="countTravel_0" class="custom-control-label">Mehrere Reisen im Jahr</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+					  <input name="countTravel" id="countTravel_1" type="radio" class="custom-control-input" value="oneTravel"> 
+					  <label for="countTravel_1" class="custom-control-label">Nur eine Reise</label>
+					</div>
+				  </div>
+				</div>
+	
+				<div class="form-group row">
+				  <label class="col-4">In welche Region verreisen Sie ?</label> 
+				  <div class="col-8">
+					<div class="custom-control custom-radio custom-control-inline">
+					  <input name="region" id="region _0" type="radio" class="custom-control-input" value="germany"> 
+					  <label for="region _0" class="custom-control-label">Deutschland</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+					  <input name="region" id="region _1" type="radio" class="custom-control-input" value="europe"> 
+					  <label for="region _1" class="custom-control-label">Europa/Mittelmeer</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+					  <input name="region" id="region _2" type="radio" class="custom-control-input" value="world"> 
+					  <label for="region _2" class="custom-control-label">Welt</label>
+					</div>
+				  </div>
+				</div>
+	
+				<div class="form-group row">
+				  <label class="col-4">Wie lange verreisen Sie ?</label> 
+					
+				  <div class="col-8">
+					<div class="input-group">
+					  <input id="inputDays" name="buttondropdown" class="form-control" placeholder="Anzahl" type="text" required="">
+					  <div class="input-group-btn">
+						  <span class="caret"></span>
+						</button>
+						<select id="daysformat" name="selectbasic" class="form-control">
+							<option value="days">Tage</option>
+							<option value="weeks">Wochen</option>
+							<option value="months">Monate</option>
+	
+						  </select>
+					  
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+	
+	
+	
+				<div class="form-group row">
+				  <label class="col-4">An welchen Leistungen sind sie interessiert ?</label> 
+				  <div class="col-8">
+					<div class="custom-control custom-checkbox custom-control-inline">
+					  <input name="insureOptions" id="ruecktritt" type="checkbox" class="custom-control-input" value="ruecktritt"> 
+					  <label for="ruecktritt" class="custom-control-label">Reiserücktrittversicherung</label>
+					</div>
+					<div class="custom-control custom-checkbox custom-control-inline">
+					  <input name="insureOptions" id="luggage" type="checkbox" class="custom-control-input" value="luggage"> 
+					  <label for="luggage" class="custom-control-label">Reisegepäckversicherung</label>
+					</div>
+			 
+				  </div>
+				</div>
+				<div class="form-group row">
+	
+				  
+				  <label for="select1" class="col-4 col-form-label">Möchten Sie ihren Ehepartner oder Kinder bis zu 25 Jahren mitversichern ? </label> 
+				<div class="col-8">
+					<select id="group" name="select1" class="custom-select">
+					  <option value="True">Ja</option>
+					  <option value="False">Nein</option>
+	
+					</select>
+		   
+	
+	
+	
+				</div>
+				</div>
+			   
+				
+				<div class="form-group row">
+				  <label for="birthday" class="col-4 col-form-label">Ihr Geburtsdatum</label> 
+				  <div class="col-8">
+	
+	
+					  <input type="text" class="  form-control" id ="birthday">
+					<label for="birthday"> Geburtsjahr</label>
+
+					
+				<div class="container-contact1-form-btn">
+					<button type="button" class="btn btn-outline-primary btn-lg" id ="sendForm" data-toggle="modal" data-target="#modalPoll-1"><i class="fas fa-list"></i>&nbsp; Abschicken</a>
+
+				 
+	</div>
+	</form>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal fade right " id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true" data-backdrop="false">
+  <div class="modal-dialog modal-full-height modal-right modal-notify modal-info  " role="document" id="insuranceModal">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <p class="heading lead"> Reiseversicherung  
+        </p>
+
+        <button type="button" class="close" id="closeForm" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">×</span>
+        </button>
+      </div>
+      <div class="modal-body " id ="step1">
+
+
+
+
+
+            
+
+        
+<div class="row" id="printcard">  
+
+</div> 
+    
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+	<script src="js/scripts.js"></script> <!-- Custom scripts -->
+	<script src="js/yearpicker.js"></script> <!-- Custom scripts -->
+
+
+</body>
+</html>

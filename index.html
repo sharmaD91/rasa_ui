@@ -27,7 +27,8 @@
 	<link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+
+
 
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -112,7 +113,7 @@
                                 
                             </p>
                             <p class="p-large"> <h4> <b>Den Chatbot findest du unten rechts  :) </b> </h4> </p>
-                         <button type="button" class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#modalPoll-1" ><i class="fas fa-list"></i>&nbsp; Fragebogen</a>
+                         <button type="button" class="btn btn-outline-primary btn-lg" id ='test' ><i class="fas fa-list"></i>&nbsp; Fragebogen</a>
 
                            <!-- <button type="button" class="btn btn-outline-primary btn-lg"  href="#your-link"  id = "start_bot
                             "  role="button"  ><i class="fas fa-robot"> </i>&nbsp; Chatbot</a> -->
@@ -132,154 +133,12 @@
     <!-- end of header -->
 
 
-    <div class="modal fade right" id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true" data-backdrop="false">
-  <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
-    <div class="modal-content">
-      <!--Header-->
-      <div class="modal-header">
-        <p class="heading lead"> Reiseversicherung  
-        </p>
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="white-text">×</span>
-        </button>
-      </div>
-      <div class="modal-body">
+    
 
 
 
 
 
-            
-
-        <form>
-            <div class="form-group row">
-              <label class="col-4 " title="This is a div">Wie viele Reisen wollen Sie versichern ? </label> 
-
-              <div class="col-8">
-
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input name="countTravel" id="countTravel_0" type="radio" class="custom-control-input" value="multipleTravel"> 
-                  <label for="countTravel_0" class="custom-control-label">Mehrere Reisen im Jahr</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input name="countTravel" id="countTravel_1" type="radio" class="custom-control-input" value="oneTravel"> 
-                  <label for="countTravel_1" class="custom-control-label">Nur eine Reise</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label class="col-4">In welche Region verreisen Sie ?</label> 
-              <div class="col-8">
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input name="region " id="region _0" type="radio" class="custom-control-input" value="germany"> 
-                  <label for="region _0" class="custom-control-label">Deutschland</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input name="region " id="region _1" type="radio" class="custom-control-input" value="europe"> 
-                  <label for="region _1" class="custom-control-label">Europa/Mittelmeer</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input name="region " id="region _2" type="radio" class="custom-control-input" value="world"> 
-                  <label for="region _2" class="custom-control-label">Welt</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label class="col-4">Wie lange verreisen Sie ?</label> 
-                
-              <div class="col-8">
-                <div class="input-group">
-                  <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="Anzahl" type="text" required="">
-                  <div class="input-group-btn">
-                      <span class="caret"></span>
-                    </button>
-                    <select id="selectbasic" name="selectbasic" class="form-control">
-                        <option value="days">Tage</option>
-                        <option value="weeks">Wochen</option>
-                        <option value="weeks">Monate</option>
-
-                      </select>
-                  
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-
-
-
-            <div class="form-group row">
-              <label class="col-4">An welchen Leistungen sind sie interessiert ?</label> 
-              <div class="col-8">
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input name="insureOptions" id="insureOptions_0" type="checkbox" class="custom-control-input" value="ruecktrittAbbruch"> 
-                  <label for="insureOptions_0" class="custom-control-label">Reiserücktritt und Reiseabbruch</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input name="insureOptions" id="insureOptions_1" type="checkbox" class="custom-control-input" value="reisekranken"> 
-                  <label for="insureOptions_1" class="custom-control-label">Reisekrankenversicherung</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input name="insureOptions" id="insureOptions_2" type="checkbox" class="custom-control-input" value="gepaeck"> 
-                  <label for="insureOptions_2" class="custom-control-label">Reisegepäckversicherung</label>
-                </div>
-              </div>
-            </div>
-            <div class="form-group row">
-
-              
-              <label for="select1" class="col-4 col-form-label">Möchten Sie ihren Ehepartner oder Kinder bis zu 25 Jahren mitversichern ? </label> 
-            <div class="col-8">
-                <select id="adult64" name="select1" class="custom-select">
-                  <option value="1">Ja</option>
-                  <option value="2">Nein</option>
-
-                </select>
-       
-
-
-
-            </div>
-            </div>
-           
-            
-            <div class="form-group row">
-              <label for="travelDays" class="col-4 col-form-label">Ihr Geburtsdatum</label> 
-              <div class="col-8">
-
-
-                  <input type="date" class="form-control" id ="travelDays">
-                <label for="travelDays"> Geburtsdatum</label>
-             
-</div>
-
-
-
-
-
-
-
-
-
-      </div>
-
-
-      
-      <!--Footer-->
-      <div class="modal-footer justify-content-center">
-        <a type="button" class="btn btn-primary waves-effect waves-light">Abschicken
-          <i class="fa fa-paper-plane ml-1"></i>
-        </a>
-        <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Abbrechen</a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 
 <!-- Modal: modalPoll -->
 
@@ -357,8 +216,8 @@
     <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    <script src= "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
-  
+
+    <script src="https://unpkg.com/emodal@1.2.69/dist/eModal.min.js" ></script>
+
 </body>
 </html>
