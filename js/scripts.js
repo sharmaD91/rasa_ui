@@ -42,12 +42,20 @@
     });
     
     $( "#test" ).click(function() {
-        eModal.iframe('questionary.html', 'Hot news')
+        eModal.iframe('questionary.html', 'Fragebogen Versicherungsvergleich')
         eModal.setEModalOptions({
             animation: false
         });
 
     }); 
+
+    $('#modalPoll-1').on('show.bs.modal', function () {
+        $(this).find('.modal-body').css({
+               width:'auto', //probably not needed
+               height:'auto', //probably not needed 
+               'max-height':'100%'
+        });
+ });
 
         $( "#sendForm" ).click(function() {
             
@@ -56,9 +64,10 @@
             html += '<div class="border-primary mb-3">';
             html += '<div class="row">';
             html += '<div class="col-md-4 userimg"> </div>';
-            html += '<div class="col-md-8 px-3">';
-            html += '<div class="card-block px-3">';
-            html += '<h4 class="card-title"> </h4>';
+            html += '<div class="col-md-8 px-5">';
+            html += '<div class="card-block px-5">';
+            html += '<h6 class="card-title"> </h6>';
+           // html += '  <a class="btn btn-primary" href="www.google.de" id="butttonMore" role="Mehr">Link</a>   '
             html += '</div>';
             html += '</div>';
             html += '</div>';
@@ -147,14 +156,14 @@ $.ajax({
             uimg = data[i].image_link;
             text = data[i].name;
 
-            
+            var $href = $("<href>='google.de");
             var $img = $("<img/>");
             $img.width('200px');
             $img.height('220px');
             $img.attr("src", "" + uimg);
             $(".userimg:eq("+i+")").append($img);
-            $(".card-title:eq("+i+")").append(text);
-
+            $(".card-title:eq("+i+")").append(' <a class="btn btn-primary active"' +' href=" ' + uimg + '"' + 'target="_blank" id="butttonMore" role="Mehr">Weiter</a> ');
+        
           }  
 
         console.log(data[0].image_link);
