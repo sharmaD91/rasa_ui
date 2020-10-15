@@ -49,6 +49,14 @@
 
     }); 
 
+    $( "#chatbotModal" ).click(function() {
+        eModal.alert('Den Chatbot findest du unten Rechts :)');
+
+    }); 
+
+
+
+
     $('#modalPoll-1').on('show.bs.modal', function () {
         $(this).find('.modal-body').css({
                width:'auto', //probably not needed

@@ -112,11 +112,14 @@
                           Gerade zu Beginn kann es noch zu vielen <b>Fehlinterpretationen</b> seitens meines Bots kommen - Ich bitte dies zu entschuldigen. Bitte beachte das alle Gespräche aufgezeichnet werden.
                                 
                             </p>
-                            <p class="p-large"> <h4> <b>Den Chatbot findest du unten rechts  :) </b> </h4> </p>
-                         <button type="button" class="btn btn-outline-primary btn-lg" id ='test' ><i class="fas fa-list"></i>&nbsp; Fragebogen</a>
+                            <p class="p-large"> <h4> <b>Bitte führe das Experiment in folgender Reihenfolge aus :  :) </b> </h4> </p>
 
-                           <!-- <button type="button" class="btn btn-outline-primary btn-lg"  href="#your-link"  id = "start_bot
-                            "  role="button"  ><i class="fas fa-robot"> </i>&nbsp; Chatbot</a> -->
+                            <div id = "buttonChat" class ="btn-group-vertical mb-2 mr-2">
+                              
+                         <button type="button" class="btn btn-outline-primary btn-lg  mb-2 mr-2" id ='test' ><i class="fas fa-list"></i>&nbsp;Klassischer Fragebogen &nbsp;</a>
+
+                            <button type="button" class="btn btn-outline-primary btn-lg mb-2 mr-2"   id = "chatbotModal"  role="button" ><i class="fas fa-robot"> </i>&nbsp;Chatbot</a> 
+                            </div>
                         </div>
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
@@ -190,8 +193,20 @@
 
   
   <div id="webchat" ></div>
-    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js">
+
+ </script>
+  
+    <script>
+           function test() {
+  return toggleConversation()}
+    </script>
 <script>
+ 
+
   WebChat.default.init({
     selector: "#webchat",
     initPayload: "/greet",
@@ -203,6 +218,14 @@
     subtitle: "Reiseberater",
     params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
   })
+</script>
+
+<script>
+
+var ul = document.querySelector('#buttonChat');
+for (var i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+}
 </script>
 
     	
