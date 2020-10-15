@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Contact V1</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+		rel="stylesheet">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180578881-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-180578881-1');
-</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180578881-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-180578881-1');
+	</script>
 
 
-<link rel="stylesheet" href="css/yearpicker.css">
+	<link rel="stylesheet" href="css/yearpicker.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
 
 	<div class="contact1">
@@ -35,115 +38,141 @@
 			<div class="contact1-pic js-tilt" data-tilt>
 			</div>
 
-			
+
 			<form id="insuranceCheck">
 				<div class="form-group row">
-				  <label class="col-4 " data-toggle="tooltip" data-placement="top" title="Für den Fall, dass du dieses Jahr öfter verreisen möchte, bieten wir Ihnen spezielle Jahrestarife an">Wie viele Reisen wollen Sie versichern ? </label> 
-	
-				  <div class="col-8">
-	
-					<div class="custom-control custom-radio custom-control-inline">
-					  <input name="countTravel" id="countTravel_0" type="radio" class="custom-control-input" value="multipleTravel"> 
-					  <label for="countTravel_0" class="custom-control-label">Mehrere Reisen im Jahr</label>
+					<label class="col-4 " data-toggle="tooltip" data-placement="top"
+						title="Für den Fall, dass du dieses Jahr öfter verreisen möchte, bieten wir Ihnen spezielle Jahrestarife an">Wie
+						viele Reisen wollen Sie versichern ? </label>
+
+					<div class="col-8">
+
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="countTravel" id="countTravel_0" type="radio" class="custom-control-input"
+								value="multipleTravel">
+							<label for="countTravel_0" class="custom-control-label">Mehrere Reisen im Jahr</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="countTravel" id="countTravel_1" type="radio" class="custom-control-input"
+								value="oneTravel">
+							<label for="countTravel_1" class="custom-control-label">Nur eine Reise</label>
+						</div>
 					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-					  <input name="countTravel" id="countTravel_1" type="radio" class="custom-control-input" value="oneTravel"> 
-					  <label for="countTravel_1" class="custom-control-label">Nur eine Reise</label>
-					</div>
-				  </div>
 				</div>
-	
+
 				<div class="form-group row">
-				  <label class="col-4  " data-toggle="tooltip" data-placement="top" title="Dein Reiseziel hat Auswirkungen auf meine Tarifempfehlungen">In welche Region verreisen Sie ?</label> 
-				  <div class="col-8">
-					<div class="custom-control custom-radio custom-control-inline">
-					  <input name="region" id="region _0" type="radio" class="custom-control-input" value="germany"> 
-					  <label for="region _0" class="custom-control-label">Deutschland</label>
+					<label class="col-4  " data-toggle="tooltip" data-placement="top"
+						title="Dein Reiseziel hat Auswirkungen auf meine Tarifempfehlungen">In welche Region verreisen
+						Sie ?</label>
+					<div class="col-8">
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="region" id="region _0" type="radio" class="custom-control-input"
+								value="germany">
+							<label for="region _0" class="custom-control-label">Deutschland</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="region" id="region _1" type="radio" class="custom-control-input"
+								value="europe">
+							<label for="region _1" class="custom-control-label">Europa/Mittelmeer</label>
+						</div>
+						<div class="custom-control custom-radio custom-control-inline">
+							<input name="region" id="region _2" type="radio" class="custom-control-input" value="world">
+							<label for="region _2" class="custom-control-label">Welt</label>
+						</div>
 					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-					  <input name="region" id="region _1" type="radio" class="custom-control-input" value="europe"> 
-					  <label for="region _1" class="custom-control-label">Europa/Mittelmeer</label>
-					</div>
-					<div class="custom-control custom-radio custom-control-inline">
-					  <input name="region" id="region _2" type="radio" class="custom-control-input" value="world"> 
-					  <label for="region _2" class="custom-control-label">Welt</label>
-					</div>
-				  </div>
 				</div>
-	
+
 				<div class="form-group row">
-				  <label class="col-4" data-toggle="tooltip" data-placement="top" title="Deine Reisedauer hat Auswirkungen auf die Tarifauswahl">Wie lange verreisen Sie ?</label> 
-					
-				  <div class="col-8">
-					<div class="input-group">
-					  <input id="inputDays" name="buttondropdown" class="form-control" placeholder="Anzahl" type="text" required="">
-					  <div class="input-group-btn">
-						  <span class="caret"></span>
-						</button>
-						<select id="daysformat" name="selectbasic" class="form-control">
-							<option value="days">Tage</option>
-							<option value="weeks">Wochen</option>
-							<option value="months">Monate</option>
-	
-						  </select>
-					  
-					  </div>
+					<label class="col-4" data-toggle="tooltip" data-placement="top"
+						title="Deine Reisedauer hat Auswirkungen auf die Tarifauswahl">Wie lange verreisen Sie ?</label>
+
+					<div class="col-8">
+						<div class="input-group">
+							<input id="inputDays" name="buttondropdown" class="form-control" placeholder="Anzahl"
+								type="text" required="">
+							<div class="input-group-btn">
+								<span class="caret"></span>
+								</button>
+								<select id="daysformat" name="selectbasic" class="form-control">
+									<option value="days">Tage</option>
+									<option value="weeks">Wochen</option>
+									<option value="months">Monate</option>
+
+								</select>
+
+							</div>
+						</div>
 					</div>
-				  </div>
 				</div>
-				
-	
-	
-	
+
+
+
+
 				<div class="form-group row">
-				  <label class="col-4">An welchen Leistungen sind sie interessiert ?</label> 
-				  <div class="col-8">
-					<div class="custom-control custom-checkbox custom-control-inline">
-					  <input name="insureOptions" id="ruecktritt" type="checkbox" class="custom-control-input" value="ruecktritt"> 
-					  <label for="ruecktritt" class="custom-control-label" data-toggle="tooltip" data-placement="top" title="Falls Sie plötzlich krank werden oder aus anderen versicherten Gründen nicht verreisen können, gibt es die Möglichkeit eine Reiserücktrittsversicherung abzuschließen">Reiserücktrittversicherung</label>
-					</div>
-					<div class="custom-control custom-checkbox custom-control-inline">
-					  <input name="insureOptions" id="luggage" type="checkbox" class="custom-control-input" value="luggage"> 
-					  <label for="luggage" class="custom-control-label "  data-toggle="tooltip" data-placement="top" title="Für den Fall dass Ihr Gepäck auf Ihrer Reise aufgrund der versicherten
+					<label class="col-4">An welchen Leistungen sind sie interessiert ?</label>
+					<div class="col-8">
+						<div class="custom-control custom-checkbox custom-control-inline">
+							<input name="insureOptions" id="ruecktritt" type="checkbox" class="custom-control-input"
+								value="ruecktritt">
+							<label for="ruecktritt" class="custom-control-label" data-toggle="tooltip"
+								data-placement="top"
+								title="Falls Sie plötzlich krank werden oder aus anderen versicherten Gründen nicht verreisen können, gibt es die Möglichkeit eine Reiserücktrittsversicherung abzuschließen">Reiserücktrittversicherung</label>
+						</div>
+						<div class="custom-control custom-checkbox custom-control-inline">
+							<input name="insureOptions" id="luggage" type="checkbox" class="custom-control-input"
+								value="luggage">
+							<label for="luggage" class="custom-control-label " data-toggle="tooltip"
+								data-placement="top"
+								title="Für den Fall dass Ihr Gepäck auf Ihrer Reise aufgrund der versicherten
 					  Gründe beschädigt wird, gibt es die Möglichkeit eine Reisegepäckversicherung abzuschließen">Reisegepäckversicherung</label>
+						</div>
+
 					</div>
-			 
-				  </div>
 				</div>
 				<div class="form-group row">
-	
-				  
-				  <label for="select1" class="col-4 col-form-label" data-toggle="tooltip" data-placement="top" title="Falls Sie mit deinem Lebenspartner/in und Kindern unter 25 verreisen ,
-				  gibt es die Möglichkeit diese in die Versicherung miteinzuschließen">Möchten Sie ihren Ehepartner oder Kinder bis zu 25 Jahren mitversichern ?  </label> 
-				<div class="col-8">
-					<select id="group" name="select1" class="custom-select">
-					  <option value="True">Ja</option>
-					  <option value="False">Nein</option>
-	
-					</select>
-		   
-	
-	
-	
+
+
+					<label for="select1" class="col-4 col-form-label" data-toggle="tooltip" data-placement="top" title="Falls Sie mit deinem Lebenspartner/in und Kindern unter 25 verreisen ,
+				  gibt es die Möglichkeit diese in die Versicherung miteinzuschließen">Möchten Sie ihren Ehepartner oder Kinder bis
+						zu 25 Jahren mitversichern ? </label>
+					<div class="col-8">
+						<select id="group" name="select1" class="custom-select">
+							<option value="True">Ja</option>
+							<option value="False">Nein</option>
+
+						</select>
+
+
+
+
+					</div>
 				</div>
-				</div>
-			   
-				
+
+
 				<div class="form-group row">
-				  <label for="birthday" class="col-4 col-form-label" data-toggle="tooltip" data-placement="top" title="Es gibt spezielle Tarife für Studenten und Personen unter 35">Ihr Geburtsdatum</label> 
-				  <div class="col-8">
-	
-	
-					  <input type="text" class="  form-control" id ="birthday">
-					<label for="birthday"> Geburtsjahr</label>
+					<label for="birthday" class="col-4 col-form-label" data-toggle="tooltip" data-placement="top"
+						title="Es gibt spezielle Tarife für Studenten und Personen unter 35">Ihr Geburtsdatum</label>
+					<div class="col-8">
 
-					
-				<div class="container-contact1-form-btn">
-					<button type="button" class="btn btn-outline-primary btn-lg" id ="sendForm" data-toggle="modal" data-target="#modalPoll-1"><i class="fas fa-list"></i>&nbsp; Abschicken</a>
 
-				 
-	</div>
-	</form>
+						<input type="text" class="  form-control" id="birthday">
+						<label for="birthday"> Geburtsjahr</label>
+
+
+						<div class="container-contact1-form-btn">
+							<button type="button" class="btn btn-outline-primary btn-lg" id="sendForm"
+								data-toggle="modal" data-target="#modalPoll-1"><i class="fas fa-list"></i>&nbsp;
+								Abschicken</a>
+
+
+						</div>
+			</form>
+			<div class="time-message col-form-label">
+
+				<h6>
+					<span> Stoppuhr (Evaluation) : </span><span id="timeInSeconds">0</span> <span>seconds</span>
+				</h6>
+			</div>
 		</div>
 	</div>
 
@@ -157,32 +186,21 @@
 
 
 
-    <div class="modal fade right " id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true" data-backdrop="false">
-  <div class="modal-dialog modal-full-height modal-right modal-notify modal-info  " role="document" id="insuranceModal">
-    <div class="modal-content">
-      <!--Header-->
-      <div class="modal-header">
-        <p class="heading lead"> Reiseversicherung  
-        </p>
+	<div class="modal fade right " id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-full-height modal-right modal-notify modal-info  " role="document"
+			id="insuranceModal">
+			<div class="modal-content" id="watchModal">
+				<!--Header-->
+				<div class="modal-header">
+					<p class="heading lead"> Reiseversicherung
+					</p>
 
-        <button type="button" class="close" id="closeForm" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="white-text">×</span>
-        </button>
-      </div>
-      <div class="modal-body " id ="step1">
-
-
-
-
-
-            
-
-        
-<div class="card-group" id="printcard">  
-
-</div> 
-    
+					<button type="button" class="close" id="closeForm" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" class="white-text">×</span>
+					</button>
+				</div>
+				<div class="modal-body " id="step1">
 
 
 
@@ -190,10 +208,19 @@
 
 
 
-      </div>
+
+					<div class="card-group" id="printcard">
+
+					</div>
 
 
 
+
+
+
+
+
+				</div>
 
 
 
@@ -219,18 +246,115 @@
 
 
 
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-	<script src="js/scripts.js"></script> <!-- Custom scripts -->
-	<script src="js/yearpicker.js"></script> <!-- Custom scripts -->
+
+
+
+				<!-- Scripts -->
+				<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+				<script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+				<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+				<script src="js/jquery.easing.min.js"></script>
+				<!-- jQuery Easing for smooth scrolling between anchors -->
+				<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+				<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+				<script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+				<script src="js/validator.min.js"></script>
+				<!-- Validator.js - Bootstrap plugin that validates forms -->
+				<script src="js/scripts.js"></script> <!-- Custom scripts -->
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.5/platform.min.js"></script>
+				<script src="js/timeme.min.js"></script> <!-- Custom scripts -->
+				<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+				<script type="text/javascript">
+					// Initialize library and start tracking time
+					var uuid = uuidv4();
+
+					var browser = platform.name +
+						" v" + platform.version +
+						" on " + platform.os;
+					var ip = null;
+
+
+					var data = JSON.parse(GetIP());
+					console.log(browser)
+					console.log(data.ip)
+					TimeMe.initialize({
+						currentPageName: "questionary.html", // current page
+						idleTimeoutInSeconds: 30 // seconds
+
+					});
+
+					function uuidv4() {
+						return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+							var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+							return v.toString(16);
+						});
+					}
+
+					function GetIP() {
+						var Httpreq = new XMLHttpRequest(); // a new request
+						Httpreq.open("GET", "https://api.ipify.org?format=json", false);
+						Httpreq.send(null);
+						return Httpreq.responseText;
+					}
+
+					// ... Some time later ...
+
+					// Retrieve time spent on current page
+					var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
+					window.onload = function () {
+						TimeMe.trackTimeOnElement('watchModal');
+
+						setInterval(function () {
+							var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
+							document.getElementById('timeInSeconds').textContent = timeSpentOnPage.toFixed(2);
+
+
+						}, 25);
+					}
+					window.addEventListener('beforeunload', function (e) {
+
+					});
+
+					$("#sendForm").click(function () {
+						console.log('send request')
+						xmlhttp = new XMLHttpRequest();
+						xmlhttp.open("POST", "https://nodeserver-292320.nw.r.appspot.com/timestamp", true);
+						xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+						var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
+						var datetime = new Date().toISOString().slice(0, 19).replace('T', ' ');
+						xmlhttp.send(JSON.stringify({
+							"uniqide": uuid,
+							"timestamp": timeSpentOnPage,
+							"htmlsite": "main",
+							"datestamp": datetime,
+							"browser":browser,
+							"ipaddress":data.ip
+						}));
+					});
+
+					$("#closeForm").click(function () {
+						timeOnActivity = TimeMe.getTimeOnElementInSeconds('watchModal');
+						console.log(timeOnActivity)
+						xmlhttp = new XMLHttpRequest();
+						xmlhttp.open("POST", "https://nodeserver-292320.nw.r.appspot.com/timestamp", true);
+						xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+						var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
+						var datetime = new Date().toISOString().slice(0, 19).replace('T', ' ');
+						xmlhttp.send(JSON.stringify({
+							"uniqide": uuid,
+							"timestamp": timeSpentOnPage,
+							"htmlsite": "resultPage",
+							"datestamp": datetime,
+							"browser":browser,
+							"ipaddress":data.ip
+						}));
+
+					});
+				</script>
+				<script src="js/yearpicker.js"></script> <!-- Custom scripts -->
 
 
 </body>
+
 </html>

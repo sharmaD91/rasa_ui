@@ -44,6 +44,11 @@ html {
 	height: 100%;
 }
 
+.time-message{
+	color: #160d3f !important;
+
+}
+
 .modal-title {
  display:inline;
  color: #160d3f !important;
