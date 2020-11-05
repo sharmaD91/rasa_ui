@@ -112,15 +112,23 @@
                           Gerade zu Beginn kann es noch zu vielen <b>Fehlinterpretationen</b> seitens meines Bots kommen - Ich bitte dies zu entschuldigen. Bitte beachte das alle Gespräche aufgezeichnet werden.
                                 
                             </p>
-                            <p class="p-large"> <h4> <b>Bitte führe das Experiment in folgender Reihenfolge aus :  </b> </h4> </p>
+                            <p class="p-large"> <h4> <b>Bitte führe das Experiment alle drei Schritte nacheinander aus :  </b> </h4> </p>
 
+
+                            <div class ="container">
                             <div id = "buttonChat" class ="btn-group-vertical mb-2 mr-2">
                               
                          <button type="button" class="btn btn-outline-primary btn-lg  mb-2 mr-2" id ='test' ><i class="fas fa-list"></i>&nbsp;Klassischer Fragebogen &nbsp;</a>
 
                             <button type="button" class="btn btn-outline-primary btn-lg mb-2 mr-2"   id = "chatbotModal"  role="button" ><i class="fas fa-robot"> </i>&nbsp;Chatbot</a> 
+
+
                             </div>
+                            <a class="btn btn-outline-primary btn-lg "  href="https://forms.gle/yCC17nAtr7NJJKcx9" target="_blank"  id = "googleSurvey"  role="button" ><i class="fas fa-question-circle"> </i>&nbsp;Nutzerbewertung</a> 
                         </div>
+                                                   </div>
+
+                        
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
                         <div class="image-container">
@@ -223,7 +231,7 @@
 <script>
 
 var ul = document.querySelector('#buttonChat');
-for (var i = ul.children.length; i >= 0; i--) {
+for (var i = ul.children.length; i >= 0; i--) {	
     ul.appendChild(ul.children[Math.random() * i | 0]);
 }
 </script>
