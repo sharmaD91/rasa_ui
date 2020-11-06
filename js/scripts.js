@@ -48,6 +48,14 @@
 
     }); 
 
+
+    $( "#butttonMore" ).click(function() {
+        eModal.iframe('questionary.html', 'Fragebogen Versicherungsvergleich')
+        eModal.setEModalOptions({
+            animation: false
+        });
+
+    }); 
     $( "#chatbotModal" ).click(function() {
         eModal.alert('Den Chatbot findest du unten Rechts :)');
 
@@ -139,7 +147,6 @@
            actualYear = new Date().getFullYear()
            myDate = actualYear - myDate;
 
-            alert(countTravel + " " + region + "  " + travelDays + "  " + daysFormat + "  " + luggage + "  " + financeLoss + "  " + family +"   " + myDate);
 
    
 $.ajax({
