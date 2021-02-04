@@ -377,23 +377,22 @@
     
 
 
-  
-  <div id="webchat" ></div>
 
-
-  
-    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js">
-
- </script>
   
     <script>
            function test() {
   return toggleConversation()}
     </script>
-<script>
- 
 
-  WebChat.default.init({
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
     selector: "#webchat",
     initPayload: "/greet",
     customData: {"language": "de"}, // arbitrary custom data. Stay minimal as this will be added to the socket
@@ -403,7 +402,12 @@
     showFullScreenButton: true,
     subtitle: "Reiseberater",
     params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
-  })
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
 </script>
 
 <script>
