@@ -248,9 +248,9 @@
 					var ip = null;
 
 
-					var data = JSON.parse(GetIP());
+					//var data = JSON.parse(GetIP());
 					console.log(browser)
-					console.log(data.ip)
+					//console.log(data.ip)
 					TimeMe.initialize({
 						currentPageName: "questionary.html", // current page
 						idleTimeoutInSeconds: 30 // seconds
@@ -264,12 +264,12 @@
 						});
 					}
 
-					function GetIP() {
-						var Httpreq = new XMLHttpRequest(); // a new request
-						Httpreq.open("GET", "https://cors-anywhere.herokuapp.com/https://api.ipdata.co?api-key=7e3bbe2fb0008be18ce836d5329aac1c5b2f09a3054f4ce5615ff56c", false);
-						Httpreq.send(null);
-						return Httpreq.responseText;
-					}
+					// function GetIP() {
+					// 	var Httpreq = new XMLHttpRequest(); // a new request
+					// 	Httpreq.open("GET", "https://cors-anywhere.herokuapp.com/https://api.ipdata.co?api-key=7e3bbe2fb0008be18ce836d5329aac1c5b2f09a3054f4ce5615ff56c", false);
+					// 	Httpreq.send(null);
+					// 	return Httpreq.responseText;
+					// }
 
 					// ... Some time later ...
 
